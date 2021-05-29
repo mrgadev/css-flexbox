@@ -1,0 +1,159 @@
+/* Senin, 23 Sya'ban 1442 H */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.6;
+    padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    box-shadow: 2.5px 2.5px 7px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 2.75px;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+}
+
+.related h4 {
+    margin-left: 75px;
+}
+
+
+/* Latihan 2 - Other article */
+
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.artikel {
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.artikel.satu { 
+    background-color: rgba(115, 255, 0, 0.945);
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px 6px rgba(115, 255, 0, 0.945);
+}
+
+.artikel.dua {
+     background-color: rgb(241, 101, 101);
+     border-radius: 3px;
+     box-shadow: 3px 3px 6px 6px rgb(241, 101, 101);
+}
+
+.artikel.tiga { 
+    background-color: rgb(3, 143, 199); 
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px 6px rgb(3, 143, 199);
+}
+
+/* Latihan 3 - Gallery */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 25%;
+}
+
+.thumbnail img  {
+    width: 100%;
+}
+/* Akhir Latihan 3 */
+
+/* Latihan 4 - Price Card */
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 3.7px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+    height: 100px;
+    background-color: cyan;
+}
+
+.card .header h4 {
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.card .harga {
+    text-align: center;
+    padding-bottom: 15px;
+}
+/* Akhir Latihan 4 */
+
+
+/* Latihan 5 */
+.container-lima {
+    width: 500px;
+    /* height: 500px; */
+    margin: 50px auto;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 7px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 2.8px;
+    display: flex;
+}
+
+.kotak {
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+/* Responsive */
+@media( min-width:600px ) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .artikel {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
